@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ＫＡＺＩＹＡ ✯ | Photographer, Photo Editor & Web Developer</title>
+  <meta name="description" content="KAZIYA — cinematic portraits, photo manipulation, gaming graphics and web development. Turning moments into masterpieces." />
+  <meta property="og:title" content="ＫＡＺＩＹＡ ✯ — Turning Moments Into Masterpieces" />
+  <meta property="og:description" content="Premium photography, photo editing and web development portfolio." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#05070c" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2305070c'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial Black' font-size='38' fill='%2300b3ff'%3EK%3C/text%3E%3Ctext x='49' y='20' font-size='14' fill='%23e8c66a'%3E%E2%9C%AF%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Sora:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- NAVIGATION -->
+  <header class="nav" id="nav">
+    <a href="#home" class="logo" aria-label="KAZIYA home"><span class="logo-mark">K</span><span class="logo-text">ＫＡＺＩＹＡ <span class="star">✯</span></span></a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav id="menu" class="menu" aria-label="Main">
+      <a href="#home" class="active">Home</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-bg" role="img" aria-label="Cinematic city lights at night"></div>
+      <div class="hero-overlay"></div>
+      <div class="orb orb-1" aria-hidden="true"></div>
+      <div class="orb orb-2" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow fade-up" style="--d:.1s">Portfolio · 2026</p>
+        <h1 class="hero-title fade-up" style="--d:.25s">ＫＡＺＩＹＡ <span class="star">✯</span></h1>
+        <p class="hero-sub fade-up" style="--d:.45s">PHOTOGRAPHER <i>|</i> PHOTO EDITOR <i>|</i> WEB DEVELOPER</p>
+        <p class="tagline fade-up" style="--d:.65s"><span id="typed"></span><span class="caret">_</span></p>
+        <div class="hero-btns fade-up" style="--d:.85s">
+          <a href="#gallery" class="btn btn-primary">Explore My Work</a>
+          <a href="#contact" class="btn btn-ghost">Contact Me</a>
+        </div>
+      </div>
+      <a href="#gallery" class="scroll-hint" aria-label="Scroll to gallery"><span></span></a>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section">
+      <div class="section-head reveal">
+        <p class="eyebrow">Selected Frames</p>
+        <h2>Photography Gallery</h2>
+      </div>
+      <div class="filters reveal" role="tablist" aria-label="Gallery categories">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="portrait">Cinematic Portraits</button>
+        <button class="filter" data-filter="manipulation">Photo Manipulation</button>
+        <button class="filter" data-filter="nature">Nature</button>
+        <button class="filter" data-filter="street">Street</button>
+        <button class="filter" data-filter="creative">Creative Edits</button>
+        <button class="filter" data-filter="gaming">Gaming Logos & Graphics</button>
+      </div>
+      <!-- Gallery items are generated from the GALLERY array in script.js — replace URLs there with your own photos. -->
+      <div class="masonry" id="masonry"></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="about-photo reveal">
+        <img src="https://images.unsplash.com/photo-1554080353-a576cf803bda?auto=format&fit=crop&w=800&q=75" alt="Portrait of KAZIYA holding a camera" loading="lazy" width="800" height="1000" />
+        <div class="photo-frame" aria-hidden="true"></div>
+      </div>
+      <div class="about-text reveal">
+        <p class="eyebrow">About Me</p>
+        <h2>Behind The Lens</h2>
+        <p>I'm <strong>KAZIYA</strong> — a creative photographer, photo editor and web developer who chases light, mood and story. From moody cinematic portraits to surreal manipulations and bold gaming graphics, every frame is crafted to feel like a scene from a film.</p>
+        <p>When I'm not behind the camera, I build fast, beautiful websites that give creative work the stage it deserves.</p>
+        <ul class="stats">
+          <li><b data-count="500">0</b><span>Edits Delivered</span></li>
+          <li><b data-count="120">0</b><span>Happy Clients</span></li>
+          <li><b data-count="40">0</b><span>Websites Built</span></li>
+        </ul>
+        <div class="chips"><span>Lightroom</span><span>Photoshop</span><span>Color Grading</span><span>Retouching</span><span>UI Design</span></div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="section-head reveal">
+        <p class="eyebrow">Toolkit</p>
+        <h2>Skills</h2>
+      </div>
+      <div class="skills">
+        <div class="skill glass reveal"><div class="skill-top"><span>Photography</span><span>95%</span></div><div class="bar"><i style="--w:95%"></i></div></div>
+        <div class="skill glass reveal"><div class="skill-top"><span>Photo Editing</span><span>97%</span></div><div class="bar"><i style="--w:97%"></i></div></div>
+        <div class="skill glass reveal"><div class="skill-top"><span>Graphic Design</span><span>90%</span></div><div class="bar"><i style="--w:90%"></i></div></div>
+        <div class="skill glass reveal"><div class="skill-top"><span>HTML</span><span>92%</span></div><div class="bar"><i style="--w:92%"></i></div></div>
+        <div class="skill glass reveal"><div class="skill-top"><span>CSS</span><span>88%</span></div><div class="bar"><i style="--w:88%"></i></div></div>
+        <div class="skill glass reveal"><div class="skill-top"><span>JavaScript</span><span>80%</span></div><div class="bar"><i style="--w:80%"></i></div></div>
+        <div class="skill glass reveal"><div class="skill-top"><span>Responsive Web Design</span><span>90%</span></div><div class="bar"><i style="--w:90%"></i></div></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="section-head reveal">
+        <p class="eyebrow">Featured Work</p>
+        <h2>Projects</h2>
+      </div>
+      <div class="projects">
+        <article class="project glass reveal">
+          <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=700&q=70" alt="Moody studio portrait series" loading="lazy" width="700" height="450" />
+          <div class="project-body"><span class="tag">Photography</span><h3>Neon Souls</h3><p>A portrait series exploring identity under city neon light.</p><a href="#gallery" class="btn btn-small">View Project</a></div>
+        </article>
+        <article class="project glass reveal">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=700&q=70" alt="Cinematic color graded landscape" loading="lazy" width="700" height="450" />
+          <div class="project-body"><span class="tag">Cinematic Edit</span><h3>Golden Hour Grade</h3><p>Film-inspired color grading pack applied to landscape work.</p><a href="#gallery" class="btn btn-small">View Project</a></div>
+        </article>
+        <article class="project glass reveal">
+          <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=700&q=70" alt="Gaming setup with RGB lighting" loading="lazy" width="700" height="450" />
+          <div class="project-body"><span class="tag">Gaming</span><h3>Esports Brand Kit</h3><p>Logos, banners and stream overlays for a competitive team.</p><a href="#gallery" class="btn btn-small">View Project</a></div>
+        </article>
+        <article class="project glass reveal">
+          <img src="https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?auto=format&fit=crop&w=700&q=70" alt="Abstract colorful graphic design" loading="lazy" width="700" height="450" />
+          <div class="project-body"><span class="tag">Graphic Design</span><h3>Fluid Posters</h3><p>Abstract poster collection blending 3D forms and type.</p><a href="#gallery" class="btn btn-small">View Project</a></div>
+        </article>
+        <article class="project glass reveal">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=700&q=70" alt="Laptop showing website code" loading="lazy" width="700" height="450" />
+          <div class="project-body"><span class="tag">Web Development</span><h3>Studio Website</h3><p>Fast, responsive portfolio site for a wedding studio.</p><a href="#contact" class="btn btn-small">View Project</a></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="section-head reveal">
+        <p class="eyebrow">Let's Create</p>
+        <h2>Contact Me</h2>
+      </div>
+      <div class="contact">
+        <form id="contactForm" class="glass reveal" novalidate>
+          <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" maxlength="100" autocomplete="name" /><small class="err"></small></div>
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" maxlength="255" autocomplete="email" /><small class="err"></small></div>
+          <div class="field"><label for="subject">Subject</label><input id="subject" name="subject" type="text" maxlength="150" /><small class="err"></small></div>
+          <div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="5" maxlength="1000"></textarea><small class="err"></small></div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          <p class="note">⚠ Note: This form validates input only. To actually deliver messages, connect a backend or email service (e.g. Formspree, EmailJS, or your own server).</p>
+        </form>
+        <aside class="contact-side glass reveal">
+          <h3>Say hello</h3>
+          <p>Bookings, collaborations or a new website — I'd love to hear about it.</p>
+          <a href="mailto:hello@kaziya.com" class="btn btn-primary">Email Me</a>
+          <div class="socials">
+            <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+            <a href="https://tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M14 3v11a4 4 0 1 1-4-4"/><path d="M14 3c.5 3 2.5 5 5 5"/></svg></a>
+            <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M15 3h-3a4 4 0 0 0-4 4v3H6v4h2v7h4v-7h3l1-4h-4V7a1 1 0 0 1 1-1h2z"/></svg></a>
+            <a href="https://wa.me/" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M4 20l1.5-4.5A8 8 0 1 1 8.5 19z"/><path d="M9 9c0 3 3 6 6 6l1-1.5-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2z"/></svg></a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#home" class="logo"><span class="logo-mark">K</span><span class="logo-text">ＫＡＺＩＹＡ <span class="star">✯</span></span></a>
+    <p>Turning Moments Into Masterpieces.</p>
+    <p class="copy">© <span id="year"></span> KAZIYA. All rights reserved.</p>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+    <button class="lb-close" id="lbClose" aria-label="Close">×</button>
+    <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous image">‹</button>
+    <figure><img id="lbImg" src="" alt="" /><figcaption id="lbCap"></figcaption></figure>
+    <button class="lb-nav lb-next" id="lbNext" aria-label="Next image">›</button>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
